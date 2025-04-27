@@ -290,7 +290,7 @@ async def by_favlist(url_or_fid: str, truncate: int = int(1e10)) -> Path:
             print("truncate at", truncate)
             break
 
-        await asyncio.sleep(2)
+        await asyncio.sleep(5)
         page_num += 1
     await client.aclose()
     assert total_size is not None
